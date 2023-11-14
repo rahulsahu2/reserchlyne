@@ -197,7 +197,8 @@ razorpay_order_id: response.razorpay_order_id ,
 success: function (msg) {
 //alert(msg);	
 console.log(msg);
-setTimeout("<?php echo base_url('user/razorPaySuccess');?>",1000);
+var tempurl = "<?php echo base_url('user/razorPaySuccess'); ?>";
+window.location =tempurl;
 }
 });
 },
